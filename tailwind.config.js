@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         urbanist: ["var(--font-urbanist)"],
-        istok: ["var(--font-outfit)"],
+        istok: ["var(--font-istok)"],
       },
       colors: {
         rishi: {

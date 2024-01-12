@@ -25,12 +25,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${istok.className}`}>
-        <div className={`${urbanist.className}`}>
-          <Navigation />
-          {children}
-          <Footer />
-        </div>
+      <body className={`${urbanist.className} ${istok.variable}`}>
+        <Navigation />
+        {children}
+        <Footer />
       </body>
     </html>
   );
