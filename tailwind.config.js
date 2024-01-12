@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        urbanist: ["var(--font-urbanist)"],
+        istok: ["var(--font-istok)"],
+      },
       colors: {
         rishi: {
           white: "#FFFFFF",

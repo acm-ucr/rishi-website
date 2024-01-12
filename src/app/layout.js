@@ -7,14 +7,12 @@ import Footer from "@/components/Footer";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-  display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-poppins",
+  variable: "--font-urbanist",
 });
 
 const istok = Istok_Web({
   subsets: ["latin"],
-  display: "swap",
   weight: ["400", "700"],
   variable: "--font-istok",
 });
@@ -27,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} ${istok.className}`}>
+      <body className={`${urbanist.className} ${istok.variable}`}>
         <Navigation />
         {children}
         <Footer />
