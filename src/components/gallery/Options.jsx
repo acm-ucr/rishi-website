@@ -1,38 +1,30 @@
 import React from "react";
-import Button from "../Button";
+
 const Options = () => {
   return (
     <div className="flex flex-col items-center ">
       <div className="mb-2">
-        <Button
-          text="INDIA TRIP 2014"
-          href={"https://www.google.com/"}
-          color="orange"
-        />
+        <button className="bg-rishi-orange text-rishi-white font-semibold py-2 w-60 no-underline">
+          INDIA TRIP 2014
+        </button>
       </div>
 
       <div className="mb-2">
-        <Button
-          text="INDIA TRIP 2016"
-          href={"https://www.google.com/"}
-          color="green"
-        />
+        <button className="bg-rishi-green text-rishi-white font-semibold py-2 w-60 no-underline">
+          INDIA TRIP 2016
+        </button>
       </div>
 
       <div className="mb-2">
-        <Button
-          text="INDIA TRIP 2019"
-          href={"https://www.google.com/"}
-          color="orange"
-        />
+        <button className="bg-rishi-orange text-rishi-white font-semibold py-2 w-60 no-underline">
+          INDIA TRIP 2019
+        </button>
       </div>
 
       <div className="mb-2">
-        <Button
-          text="PAD SHIPMENT 2022"
-          href={"https://www.google.com/"}
-          color="green"
-        />
+        <button className="bg-rishi-green text-rishi-white font-semibold py-2 w-60 no-underline">
+          PAD SHIPMENT 2022
+        </button>
       </div>
     </div>
   );
