@@ -25,11 +25,14 @@ const About = () => {
       </div>
 
       {/* Third container with paragraph */}
-      <div
-        className="border p-4"
-      >
+      <div className="border p-4">
         <p className="font-Urbanist text-xl font-normal leading-7 tracking-normal text-center">
-        We partner with local communities and other social enterprises to identify issues central to the villages we support and provide them resources to implement solutions. In order to do this, we fundraise throughout the year and take trips as a group during the summers to offer first-hand help, deliver supplies, and implement new, helpful systems.
+          We partner with local communities and other social enterprises to
+          identify issues central to the villages we support and provide them
+          resources to implement solutions. In order to do this, we fundraise
+          throughout the year and take trips as a group during the summers to
+          offer first-hand help, deliver supplies, and implement new, helpful
+          systems.
         </p>
       </div>
 
