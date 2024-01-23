@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="flex h-screen w-screen ">
-      <div className="flex flex-col w-7/12 justify-center gap-3 pl-12">
+    <div className="flex h-screen w-screen">
+      <div className="flex flex-col w-8/12 justify-center gap-3">
         <div className="flex justify-center">
           <Image src={logo} alt="rishi-logo" className="w-24 h-auto" />
         </div>
@@ -37,12 +37,12 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="flex relative w-screen -top-24 -right-24">
+      <div className="flex justify-center items-center relative w-screen -top-24 -right-24">
         <div className="flex absolute outline outline-rishi-orange outline-3 rounded-full">
           <Image
             src={landing}
             alt="landing-page-photo"
-            className=" outline outline-3 rounded-full p-8"
+            className="outline outline-3 rounded-full p-12"
           />
         </div>
       </div>
