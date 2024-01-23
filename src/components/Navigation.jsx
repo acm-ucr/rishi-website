@@ -17,12 +17,7 @@ const Navigation = () => {
       className="bg-rishi-white p-4"
     >
       <Navbar.Brand>
-        <Link
-          onClick={() => setSelected("")}
-          eventkey="1"
-          className="p-0 flex"
-          href="/"
-        >
+        <Link eventkey="1" className="p-0 flex" href="/">
           <Image
             src={logo}
             className=" flex justify-between object-scale-down object-left h-[57px]"
@@ -34,30 +29,29 @@ const Navigation = () => {
           ></Navbar.Toggle>
 
           <Navbar.Collapse>
-            <Nav className="flex items-center">
+            <Nav className="w-12/12 flex items-center gap-x-10">
               {items.map((item, index) => (
-                <Nav.Link
-                  as={Link}
+                <Link
                   key={index}
                   href={item.link}
                   onClick={() => setSelected(item.name)}
                 >
-                  <div className="flex justify-between">
+                  <div className="flex-col items-center">
                     <div className=" font-urbanist font-light text-rishi-green hover:text-rishi-orange p-4 text-2xl">
                       {item.name}
                     </div>
 
-                    <div className="flex justify-between items-end">
+                    <div className="flex justify-center">
                       <div
                         className={
                           selected === item.name
-                            ? " bg-rishi-orange p-1 rounded-full"
+                            ? " bg-rishi-orange p-1 -translate-y-3 rounded-full"
                             : "p-1"
                         }
                       ></div>
                     </div>
                   </div>
-                </Nav.Link>
+                </Link>
               ))}
             </Nav>
           </Navbar.Collapse>
