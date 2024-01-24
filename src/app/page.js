@@ -4,6 +4,7 @@ import Divider from "@/components/home/Divider";
 import Landing from "@/components/home/Landing";
 import Mission from "@/components/home/Mission";
 import Socials from "@/components/home/Socials";
+import Button from "@/components/Button";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Divider />
       <Heading />
       <Socials />
+      <Button />
     </>
   );
 };
