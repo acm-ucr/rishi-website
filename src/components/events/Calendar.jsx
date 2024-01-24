@@ -1,29 +1,13 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./rbc.css";
-import { GoArrowLeft } from "react-icons/go";
-import { GoArrowRight } from "react-icons/go";
+import ToolBar from "./ToolBar";
+import Modal from "./modal";
+
 const localizer = momentLocalizer(moment);
-const CustomToolbar = ({ label }) => {
-  return (
-    <div>
-      <span className="flex flex-row h-full  w-1/6  justify-around">
-        <button className="   w-auto ">
-          <GoArrowLeft className=" rishi-black  w-full h-full" />
-        </button>
-        <div className="  items-center  flex flex-row justify-center h-full text-2xl font-bold text-rishi-orange">
-          {label}
-        </div>
-        <button className="   w-auto">
-          <GoArrowRight className="rishi-black  w-full h-full" />
-        </button>
-      </span>
-    </div>
-  );
-};
 
 const Mycalendar = () => {
   const formats = {
@@ -38,8 +22,8 @@ const Mycalendar = () => {
     },
     {
       title: "test",
-      start: moment("2024-01-12T00:00").toDate(),
-      end: moment("2024-01-13T00:00").toDate(),
+      start: moment("2024-02-13T00:00").toDate(),
+      end: moment("2024-02-13T00:00").toDate(),
     },
     {
       title: "rose hack",
@@ -47,34 +31,53 @@ const Mycalendar = () => {
       end: moment("2024-01-22T00:00").toDate(),
     },
   ];
+  // navigation - - - - - - - - - - - - - - - - - - - - - - - -
+  const [date, setDate] = useState(new Date());
+  const handleDate = (action) => {
+    setDate((curr) => {
+      const newDate = new Date(curr);
+      if (action == "PREV") {
+        newDate.setMonth(curr.getMonth() - 1);
+      } else if (action == "NEXT") {
+        newDate.setMonth(curr.getMonth() + 1);
+      }
+      return newDate;
+    });
+  };
+  // - - - - - - - - - - - -event- - - - - - - - - - - - - - -- - -
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const handleSelect = (e) => {
+    setSelectedEvent(e);
+  };
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const offRangeDays = document.querySelectorAll(
-        ".rbc-day-bg.rbc-off-range-bg"
-      );
+  const renderModal = () => {
+    if (!selectedEvent) return null;
 
-      offRangeDays.forEach((day) => {
-        day.classList.remove("rbc-off-range-bg");
-      });
-    }, 0);
+    return (
+      <Modal isOpen={!!selectedEvent} onClose={() => setSelectedEvent(null)}>
+        <div>title: {selectedEvent.title}</div>
+      </Modal>
+    );
+  };
 
-    return () => clearTimeout(timer);
-  }, []);
-
+  // - - - - - - - - ------------------------------ - - -
   return (
-    <div>
+    <div className="w-full px-10">
       <Calendar
         localizer={localizer}
+        date={date}
+        onSelectEvent={handleSelect}
         events={Myevents}
         views={["month"]}
         defaultView="month"
         style={{ height: "90vh" }}
         formats={formats}
+        onNavigate={handleDate}
         components={{
-          toolbar: CustomToolbar,
+          toolbar: (props) => <ToolBar {...props} handleDate={handleDate} />,
         }}
       />
+      {renderModal()}
     </div>
   );
 };
