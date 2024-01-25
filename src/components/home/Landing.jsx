@@ -6,16 +6,14 @@ import Link from "next/link";
 
 const Landing = () => {
   return (
-    <div className="flex h-screen w-screen">
+    <div className="flex h-screen w-screen ml-6">
       <div className="flex flex-col w-8/12 justify-center gap-3">
         <div className="flex justify-center">
           <Image src={logo} alt="rishi-logo" className="w-24 h-auto" />
         </div>
 
-        <div className="flex justify-center">
-          <div className="font-urbanist font-extrabold text-rishi-black text-5xl">
-            Project RISHI at UCR
-          </div>
+        <div className="flex justify-center font-urbanist font-extrabold text-rishi-black text-5xl">
+          Project RISHI at UCR
         </div>
 
         <div className="flex justify-center">
