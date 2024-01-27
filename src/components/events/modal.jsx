@@ -1,19 +1,44 @@
-import { IoClose } from "react-icons/io5";
+// Modal.jsx
+import React from "react";
+import { AiOutlinePlus } from "react-icons/ai";
 
-const Modal = ({ isOpen, onClose, children }) => {
-  if (!isOpen) return null;
+const Modal = ({ selectedEvent, onClose }) => {
+  if (!selectedEvent) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-30 flex justify-center items-center z-50 p-11">
-      <div className="w-72 h-44 bg-white  rounded-lg shadow-lg p-2 relative bg-gradient-to-tr from-purple-600 to-yellow-500 hover:scale-125 transition-transform ease-in delay-75">
-        <div className="flex justify-end">
-          <IoClose
+    <div className="font-playfair fixed top-[56%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[75vw] md:w-[50vw] bg-hlg-white z-10 drop-shadow-lg pb-16">
+      <div
+        className={`flex overflow-wrap break-words justify-between items-center ${selectedEvent.color}`}
+      >
+        <p
+          className={`text-hlg-white m-0 py-2 md:py-3 px-3 md:px-4 text-lg md:text-3xl text-white`}
+        >
+          {selectedEvent.title}
+        </p>
+        <div className=" p-3  h-full text-white">
+          <AiOutlinePlus
             onClick={onClose}
-            className="text-xl cursor-pointer rotate-45 text-blue-500 hover:rotate-90 hover:scale-150  transition-transform ease-in-out delay-150"
+            className="text-hlg-white rotate-45 p-0 hover:scale-[1.5] duration-300 hover:cursor-pointer  m-2"
           />
         </div>
-        <div className="flex flex-col items-center pt-12 justify-center text-red-100 text-2xl ">
-          {children}
+      </div>
+      <div className=" bg-white  ">
+        <p className="m-0 pl-3 text-2xl pt-3">{selectedEvent.location}</p>
+        {selectedEvent.allDay ? (
+          <p>{selectedEvent.start.toLocaleDateString()}</p>
+        ) : (
+          <p className="m-0 pl-3 text text-2xl">
+            {selectedEvent.start.toLocaleTimeString().split(":")[0]}
+            &nbsp;to&nbsp;
+            {selectedEvent.end.toLocaleTimeString().split(":")[0]}&nbsp;
+            {selectedEvent.end.toLocaleTimeString().split(":")[2].split(" ")[1]}
+          </p>
+        )}
+        <div className="   py-4 overflow-wrap break-words ">
+          {selectedEvent.description?.replace(
+            selectedEvent.description.split(" ")[0],
+            ""
+          )}
         </div>
       </div>
     </div>

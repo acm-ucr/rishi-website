@@ -19,16 +19,25 @@ const Mycalendar = () => {
       title: "12pm Meeting",
       start: moment().toDate(),
       end: moment().add(0, "day").toDate(),
+      description: "hi",
+      location: "src",
+      color: "bg-blue-300",
     },
     {
       title: "test",
       start: moment("2024-02-13T00:00").toDate(),
       end: moment("2024-02-13T00:00").toDate(),
+      description: "hi",
+      location: "src",
+      color: "bg-blue-300",
     },
     {
       title: "rose hack",
-      start: moment("2024-01-22T00:00").toDate(),
-      end: moment("2024-01-22T00:00").toDate(),
+      start: moment("2024-01-22T02:00").toDate(),
+      end: moment("2024-01-22T05:00").toDate(),
+      description: "hi",
+      location: "src",
+      color: "bg-blue-300",
     },
   ];
   // navigation - - - - - - - - - - - - - - - - - - - - - - - -
@@ -46,23 +55,13 @@ const Mycalendar = () => {
   };
   // - - - - - - - - - - - -event- - - - - - - - - - - - - - -- - -
   const [selectedEvent, setSelectedEvent] = useState(null);
-  const handleSelect = (e) => {
-    setSelectedEvent(e);
+
+  const handleSelect = (event) => {
+    setSelectedEvent(event);
   };
-
-  const renderModal = () => {
-    if (!selectedEvent) return null;
-
-    return (
-      <Modal isOpen={!!selectedEvent} onClose={() => setSelectedEvent(null)}>
-        <div>title: {selectedEvent.title}</div>
-      </Modal>
-    );
-  };
-
   // - - - - - - - - ------------------------------ - - -
   return (
-    <div className="w-full px-10">
+    <div className="w-full px-10 ">
       <Calendar
         localizer={localizer}
         date={date}
@@ -77,7 +76,13 @@ const Mycalendar = () => {
           toolbar: (props) => <ToolBar {...props} handleDate={handleDate} />,
         }}
       />
-      {renderModal()}
+      {selectedEvent && (
+        <Modal
+          isOpen={!!selectedEvent}
+          selectedEvent={selectedEvent}
+          onClose={() => setSelectedEvent(null)}
+        />
+      )}
     </div>
   );
 };
