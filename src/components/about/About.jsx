@@ -6,30 +6,36 @@ const About = () => {
   return (
     // parent div with flex column
     <div className="flex justify-center">
-      <div className="w-11/12 flex gap-5 text-rishi-black justify-center flex-col">
+      <div className="w-11/12 flex gap-2 text-rishi-black justify-center flex-col p-2">
         {/* First container */}
-        <p className="font-Urbanist  text-xl font-normal leading-7 tracking-normal text-center">
-          Project RISHI is a nonprofit organization with the mission of
+        <div className="font-Urbanist  text-xl font-normal leading-7 tracking-normal text-center p-4">
+          Project RISHI is a nonprofit organization with the mission of <br />
           promoting the sustainable growth and development of the Indian village
+          <br />
           of Ghangar.
-        </p>
+        </div>
         {/* Second container with image */}
-        <div className="flex justify-center">
-          <Image src={aboutImage} alt="" className="rounded-3xl w-1/2" />
+        <div className="flex justify-center m-0 p-0">
+          <Image
+            src={aboutImage}
+            alt=""
+            className="rounded-full w-3.5/4 h-1/2 p-0 m-0"
+          />
         </div>
 
-        {/* Third container with paragraph */}
-
-        <p className="font-Urbanist text-xl font-normal leading-7 tracking-normal text-center">
-          We partner with local communities and other social enterprises to
-          identify issues central to the villages we support and provide them
-          resources to implement solutions. In order to do this, we fundraise
-          throughout the year and take trips as a group during the summers to
-          offer first-hand help, deliver supplies, and implement new, helpful
+        <div className="font-Urbanist text-xl font-normal leading-7 tracking-normal text-center p-4">
+          We partner with local communities and other social enterprises to{" "}
+          <br />
+          identify issues central to the villages we support and provide them{" "}
+          <br />
+          resources to implement solutions. In order to do this, we fundraise{" "}
+          <br />
+          throughout the year and take trips as a group during the summers to{" "}
+          <br />
+          offer first-hand help, deliver supplies, and implement new, helpful{" "}
+          <br />
           systems.
-        </p>
-
-        {}
+        </div>
       </div>
     </div>
   );
