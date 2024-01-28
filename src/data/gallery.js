@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import india2014_1 from "public/trips/india2014/2014_1.webp";
 import india2014_2 from "public/trips/india2014/2014_2.webp";
 import india2014_3 from "public/trips/india2014/2014_3.webp";
