@@ -4,7 +4,7 @@ import Options from "@/components/gallery/Options";
 const Page = () => {
   return (
     <>
-      <Heading />
+      <Heading text="GALLERY" />
       <Options />
     </>
   );
