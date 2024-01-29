@@ -21,7 +21,7 @@ const Mycalendar = () => {
       end: moment().add(0, "day").toDate(),
       description: "hi",
       location: "src",
-      color: "bg-blue-300",
+      color: "bg-rishi-orange",
     },
     {
       title: "test",
@@ -29,7 +29,7 @@ const Mycalendar = () => {
       end: moment("2024-02-13T00:00").toDate(),
       description: "hi",
       location: "src",
-      color: "bg-blue-300",
+      color: "bg-rishi-orange",
     },
     {
       title: "rose hack",
@@ -37,7 +37,7 @@ const Mycalendar = () => {
       end: moment("2024-01-22T05:00").toDate(),
       description: "hi",
       location: "src",
-      color: "bg-blue-300",
+      color: "bg-rishi-orange",
     },
   ];
   // navigation - - - - - - - - - - - - - - - - - - - - - - - -
