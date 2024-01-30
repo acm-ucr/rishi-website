@@ -4,11 +4,9 @@ import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full pt-16 bg-rishi-green absolute bottom-0">
-      <div className="text-xl text-white absolute bottom-4 left-4 font-bold">
-        PRISHI
-      </div>
-      <div className="flex justify-end items-end h-full pr-4 pb-4 gap-4">
+    <div className="justify-between flex w-full pt-16 bg-rishi-green">
+      <div className="text-xl self-end text-white font-bold p-4">PRISHI</div>
+      <div className="flex justify-end items-end pr-4 pb-4 gap-4">
         <div className="text-right text-white">
           <div className="text-xl font-bold">Contact Us</div>
           <div className="text-sm">900 University Ave,</div>
