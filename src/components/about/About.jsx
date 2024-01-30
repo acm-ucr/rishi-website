@@ -13,7 +13,13 @@ const About = () => {
           of Ghangar.
         </div>
         <div className="flex justify-center ">
-          <Image src={aboutImage} width={500} alt="" className="rounded-full" />
+          <Image
+            src={aboutImage}
+            width={500}
+            alt=""
+            style={{ clipPath: "inset(12.5% 0 12.5% 0)" }}
+            className="rounded-l-full rounded-r-full "
+          />
         </div>
 
         <div className="w-7/12 font-Urbanist text-2xl font-normal leading-7 tracking-normal text-center p-4">
