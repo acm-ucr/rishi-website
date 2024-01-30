@@ -4,8 +4,8 @@ import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="justify-between flex items-end flex-1 ">
-      <div className="h-1/2 flex justify-between pt-10 flex-1 bg-rishi-green">
+    <div className="flex">
+      <div className="flex justify-between pt-10 flex-1 bg-rishi-green">
         <div className="text-xl self-end text-white font-bold p-4">PRISHI</div>
         <div className="flex justify-end items-end pr-4 pb-4 gap-4">
           <div className="text-right text-white">
@@ -14,10 +14,11 @@ const Footer = () => {
             <div className="text-sm">Riverside, California 92521</div>
           </div>
 
-          <div className="flex flex-col justify-center text-white text-5xl border-l-8 border-white pl-4">
+          <div className="flex items-center flex-col justify-center  text-white text-5xl border-l-8 border-white pl-4">
             <AiFillInstagram />
             <IoLogoFacebook />
-            <FaTiktok />
+            <div className="pb-1" />
+            <FaTiktok className="w-10" />
           </div>
         </div>
       </div>
