@@ -25,7 +25,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} ${istok.variable}`}>
+      <body
+        className={`${urbanist.className} ${istok.variable} flex flex-col min-h-screen`}
+      >
         <Navigation />
         {children}
         <Footer />
