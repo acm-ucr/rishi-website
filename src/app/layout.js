@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
       >
         <Navigation />
         {children}
+        <div className="flex-grow p-4" />
         <Footer />
       </body>
     </html>
