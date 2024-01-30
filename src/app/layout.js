@@ -26,11 +26,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${urbanist.className} ${istok.variable} flex flex-col min-h-screen`}
+        className={`${urbanist.className} ${istok.variable} overscroll-none flex flex-col min-h-screen`}
       >
         <Navigation />
         {children}
-        <div className="flex-grow p-4" />
+        <div className="p-4 flex-grow" />
         <Footer />
       </body>
     </html>
