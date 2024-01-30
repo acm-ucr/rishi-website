@@ -8,7 +8,7 @@ const Page = ({ params }) => {
     2016: india2016,
   };
 
-  if (!trips.hasOwnProperty(params.trip)) {
+  if (trips.hasOwnProperty(params.trip)) {
     return (
       <div className="grid grid-cols-3 grid-rows-6">
         {trips[params.trip].map((trip, index) => {
