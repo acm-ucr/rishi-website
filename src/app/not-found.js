@@ -1,16 +1,17 @@
+import Button from "@/components/Button.jsx";
+import Link from "next/link";
+
 const NotFound = () => {
   return (
-    <div className="text-center">
-      <div className="p-10"> </div>
-      <div className="text-rishi-green text-9xl font-bold">404</div>
-      <div className="text-rishi-black font-bold text-4xl p-4">
+    <div className="flex-1 justify-center items-center flex flex-col">
+
+      <div className="flex text-rishi-green text-9xl font-bold py-2">404</div>
+      <div className="flex text-rishi-black font-bold text-4xl py-2">
         Page Not Found
       </div>
-      <div className="p-3">
-        <button class="bg-rishi-white border border-rishi-orange text-rishi-black font-urbanist border-2 px-6 rounded-md px-4 rounded hover:bg-rishi-orange">
-          Back to Home
-        </button>
-      </div>
+
+      <Link href="/"><div className="flex py-4"><Button buttonText={"Back to Home"} /></div></Link>
+
     </div>
   );
 };
