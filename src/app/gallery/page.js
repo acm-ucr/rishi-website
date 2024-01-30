@@ -1,11 +1,14 @@
 import Heading from "@/components/Heading";
 import Options from "@/components/gallery/Options";
 
-const Page = () => {
+const Page = ({ params }) => {
+  const handleClick = ({ tripName }) => {
+    console.log("redirect to gallery/2014 (or whatever year)");
+  };
   return (
     <>
       <Heading text="GALLERY" />
-      <Options />
+      <Options tripClick={handleClick} />
     </>
   );
 };
