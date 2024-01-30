@@ -1,9 +1,9 @@
-import Calendar from "@/components/events/Calendar";
+import Mycalendar from "@/components/events/Calendar";
 
 const Page = () => {
   return (
     <>
-      <Calendar />
+      <Mycalendar />
     </>
   );
 };

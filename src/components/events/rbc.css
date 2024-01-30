@@ -1,0 +1,48 @@
+.rbc-month-view {
+  border-radius: 20px;
+}
+
+.rbc-header:first-child {
+  border-top-left-radius: 20px;
+}
+
+.rbc-header:last-child {
+  border-top-right-radius: 20px;
+}
+
+.rbc-header {
+  background-color: #74b589;
+  padding: 20px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.rbc-month-row:last-child {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.rbc-event {
+  background-color: #f18650;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.rbc-event-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2px;
+}
+
+.rbc-button-link {
+  font-size: 35px;
+  color: #5a5a5a;
+  font-weight: normal;
+}
+
+.rbc-day-bg.rbc-today {
+  background-color: #efefef;
+}
