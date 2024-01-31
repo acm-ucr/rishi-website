@@ -5,6 +5,7 @@ import Landing from "@/components/home/Landing";
 import Mission from "@/components/home/Mission";
 import Socials from "@/components/home/Socials";
 import Button from "@/components/Button";
+import About from "@/components/about/About";
 
 const Home = () => {
   return (
@@ -12,11 +13,13 @@ const Home = () => {
       <Landing />
       <Heading text="ABOUT US" />
       <Mission />
+      <div className="py-4" />
       <Carousel />
       <Divider />
       <Heading text="JOIN US" />
       <Socials />
       <Button />
+      <About />
     </>
   );
 };
