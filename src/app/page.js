@@ -12,7 +12,9 @@ const Home = () => {
       <Landing />
       <Heading text="ABOUT US" />
       <Mission />
+      <div className="py-5" />
       <Carousel />
+      <div className="py-5" />
       <Divider />
       <Heading text="JOIN US" />
       <Socials />
