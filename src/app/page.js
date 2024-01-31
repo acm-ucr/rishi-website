@@ -15,6 +15,7 @@ const Home = () => {
       <Mission />
       <div className="py-5" />
       <Carousel />
+      <div className="py-5" />
       <Divider />
       <Heading text="JOIN US" />
       <Socials />
