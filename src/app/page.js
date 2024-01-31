@@ -13,7 +13,7 @@ const Home = () => {
       <Landing />
       <Heading text="ABOUT US" />
       <Mission />
-      <div className="py-4" />
+      <div className="py-5" />
       <Carousel />
       <Divider />
       <Heading text="JOIN US" />
