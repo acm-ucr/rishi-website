@@ -1,7 +1,6 @@
 const Mission = () => {
   return (
     <div>
-      Mission
       <div className="flex">
         <div className="bg-rishi-orange w-1/2 flex flex-col gap-6 p-10">
           <div className="text-left font-bold text-rishi-white text-4xl">
