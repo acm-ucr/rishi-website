@@ -21,7 +21,7 @@ const About = () => {
           />
         </div>
 
-        <div className="w-7/12 font-Urbanist text-2xl font-normal leading-7 tracking-normal text-center px-2">
+        <div className="w-full md:w-7/12 px-2 font-Urbanist text-sm md:text-2xl lg:text-2xl font-normal leading-7 tracking-normal text-center">
           We partner with local communities and other social enterprises to
           identify issues central to the villages we support and provide them
           resources to implement solutions. In order to do this, we fundraise
