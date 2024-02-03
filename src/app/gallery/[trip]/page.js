@@ -1,6 +1,12 @@
 import { india2014, india2016 } from "@/data/gallery";
 import Image from "next/image";
-import { redirect } from "next/navigation";
+import { notFound } from "next/navigation";
+
+export async function generateStaticParams() {
+  const allTrips = ["2014", "2016"];
+
+  return allTrips.map((hello) => ({ trip: hello }));
+}
 
 const Page = ({ params }) => {
   const trips = {
@@ -21,7 +27,7 @@ const Page = ({ params }) => {
       </div>
     );
   } else {
-    redirect("/404");
+    return notFound();
   }
 };
 
