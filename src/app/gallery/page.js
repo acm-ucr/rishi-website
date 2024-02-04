@@ -1,14 +1,18 @@
+"use client";
 import Heading from "@/components/Heading";
 import Options from "@/components/gallery/Options";
+import { useRouter } from "next/navigation";
 
-const Page = ({ params }) => {
-  const handleClick = ({ tripName }) => {
-    console.log("redirect to gallery/2014 (or whatever year)");
+const Page = () => {
+  const router = useRouter();
+  const getYear = (tripName) => {
+    console.log(tripName);
+    router.push(`gallery/${tripName}/`);
   };
   return (
     <>
       <Heading text="GALLERY" />
-      <Options tripClick={handleClick} />
+      <Options tripClick={getYear} />
     </>
   );
 };
