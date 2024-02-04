@@ -3,7 +3,7 @@ import Heading from "@/components/Heading";
 import Options from "@/components/gallery/Options";
 import { useRouter } from "next/navigation";
 
-const Droute = () => {
+const Page = () => {
   const router = useRouter();
   const getYear = (tripName) => {
     console.log(tripName);
@@ -17,4 +17,4 @@ const Droute = () => {
   );
 };
 
-export default Droute;
+export default Page;
