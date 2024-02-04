@@ -5,7 +5,7 @@ import aboutImage from "@/public/about.webp";
 const About = () => {
   return (
     // parent div with flex column
-    <div className="font-bold font-urbanist flex items-center justify-center">
+    <div className="font-bold font-urbanist px-6 flex items-center justify-center">
       <div className="flex gap-6 text-rishi-black items-center flex-col p-2 justify-center">
         <div className="w-full md:w-7/12 px-2 font-Urbanist text-sm md:text-2xl lg:text-2xl font-normal leading-7 tracking-normal text-center">
           Project RISHI is a nonprofit organization with the mission of
