@@ -27,8 +27,11 @@ const Page = ({ params }) => {
           {trips[params.trip].map((trip, index) => {
             return (
               <div key={index}>
-                <Image alt="gallery" src={trip} />
-                <p>{params.trips}</p>
+                <Image
+                  alt="gallery"
+                  src={trip}
+                  className=" object-cover h-full "
+                />
               </div>
             );
           })}
