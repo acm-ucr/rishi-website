@@ -3,41 +3,35 @@ import placeholder from "@/public/placeholder.webp";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 
-const Member = () => {
+const Member = ({ name, role, image, yearMajor, pronouns }) => {
   return (
-    <div className="flex">
-      <div className="flex gap-3 p-5 flex-col items-start justify-start  bg-rishi-white rounded-xl text-rishi-white shadow-2xl ring-0.5 ring-rishi-black">
-        <div className="rounded-lg overflow-hidden mt-2">
-          <div className="rounded-lg overflow-hidden">
-            <Image
-              src={placeholder}
-              alt="Member"
-              width={150}
-              height={150}
-              objectFit="cover"
-            />
-          </div>
+    <div className="flex flex-col items-center gap-3 p-5 justify-start bg-rishi-white rounded-xl text-rishi-white shadow-2xl ring-0.5 ring-rishi-black w-64">
+      <div className="relative w-36 h-36 rounded-lg overflow-hidden mt-2">
+        <Image
+          src={image || placeholder}
+          alt={name}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
+      <div className="text-center">
+        <p className="text-2xl font-urbanist font-bold text-rishi-orange tracking-wide">
+          {name}
+        </p>
+        <p className="text-lg font-urbanist text-rishi-black mt-[-5]">{role}</p>
+        <div className="flex gap-2 justify-center">
+          <FaLinkedinIn className="h-6 w-6 text-rishi-orange" />
+          <IoMdMail className="h-6 w-6 text-rishi-orange" />
         </div>
-        <div className="flex flex-col -mt-2">
-          <p className="text-2xl font-urbanist font-bold text-rishi-orange  tracking-wide">
-            Jennie Kim
-          </p>
-          <p className="text-lg font-urbanist text-rishi-black mt-[-5]">
-            President
-          </p>
-          <div className="flex gap-2">
-            <FaLinkedinIn className="h-6 w-6 text-rishi-orange" />
-            <IoMdMail className="h-6 w-6 text-rishi-orange" />
-          </div>
-          <p className="text-xs font-urbanist text-rishi-black mt-1 p-0">
-            3rd year - Comp Sci
-          </p>
-          <p className="text-xs font-urbanist text-rishi-black p-0 mt-0.5">
-            Pronouns: She/Her/Hers
-          </p>
-        </div>
+        <p className="text-xs font-urbanist text-rishi-black mt-1 p-0">
+          {yearMajor}
+        </p>
+        <p className="text-xs font-urbanist text-rishi-black p-0 mt-0.5">
+          {pronouns}
+        </p>
       </div>
     </div>
   );
 };
+
 export default Member;
