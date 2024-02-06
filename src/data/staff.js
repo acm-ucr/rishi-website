@@ -48,7 +48,7 @@ export const boardMembers = [
     name: "Vrisha Arora",
     role: "Outreach Coordinator",
     image: Vrisha,
-    yearMajor: "2nd year - Computer Science",
+    yearMajor: "2nd year - CS",
     pronouns: "she/her",
   },
   {
