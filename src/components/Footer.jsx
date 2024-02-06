@@ -1,6 +1,7 @@
 import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaTiktok } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,10 +16,24 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center flex-col justify-center  text-white text-5xl border-l-8 border-white pl-4">
-            <AiFillInstagram />
-            <IoLogoFacebook />
+            <Link
+              href="https://www.instagram.com/ucrprishi/?hl=en"
+              target="_blank"
+            >
+              <AiFillInstagram />
+            </Link>
+
+            <Link href="https://www.facebook.com/ucrprishi/" target="_blank">
+              <IoLogoFacebook />
+            </Link>
+
             <div className="pb-1" />
-            <FaTiktok className="w-10" />
+            <Link
+              href="https://www.tiktok.com/@ucrprishi?_t=8bass9dmqp8&_r=1"
+              target="_blank"
+            >
+              <FaTiktok className="w-10" />
+            </Link>
           </div>
         </div>
       </div>
