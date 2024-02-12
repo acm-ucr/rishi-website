@@ -35,12 +35,12 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center relative w-screen -top-28 -right-28">
-        <div className="flex absolute outline outline-rishi-orange outline-3 rounded-full">
+      <div className="flex   items-center relative w-screen lg:-top-28 lg:-right-36 md:-top-72 md:-right-20 sm:-top-80 sm:-right-16 ">
+        <div className="flex   outline outline-rishi-orange outline-3 rounded-full  ">
           <Image
             src={landing}
             alt="landing-page-photo"
-            className="rounded-full p-12"
+            className="rounded-full sm:p-4 md:p-6 lg:p-12 "
           />
         </div>
       </div>
