@@ -1,7 +1,6 @@
 import Image from "next/image";
 import placeholder from "@/public/placeholder.webp";
 import { FaLinkedinIn } from "react-icons/fa";
-import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
 
 const Member = ({ name, role, image, yearMajor, pronouns, linkedin }) => {
