@@ -2,8 +2,9 @@ import Image from "next/image";
 import placeholder from "@/public/placeholder.webp";
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
+import Link from "next/link";
 
-const Member = ({ name, role, image, yearMajor, pronouns }) => {
+const Member = ({ name, role, image, yearMajor, pronouns, linkedin }) => {
   return (
     <div className="flex flex-col items-center gap-3 p-5 justify-start bg-rishi-white rounded-xl text-rishi-white shadow-2xl ring-0.5 ring-rishi-black w-48 min-h-full">
       <div className="relative w-36 h-36 rounded-lg overflow-hidden mt-2">
@@ -19,10 +20,13 @@ const Member = ({ name, role, image, yearMajor, pronouns }) => {
           {name}
         </p>
         <p className="text-md font-urbanist text-rishi-black mt-[-5]">{role}</p>
-        <div className="flex gap-2 justify-start">
-          <FaLinkedinIn className="h-6 w-6 text-rishi-orange" />
-          <IoMdMail className="h-6 w-6 text-rishi-orange" />
-        </div>
+        {linkedin && (
+          <div className="flex gap-2 justify-start">
+            <Link href={linkedin} target="_blank">
+              <FaLinkedinIn className="h-6 w-6 text-rishi-orange" />
+            </Link>
+          </div>
+        )}
         <p className="text-xs font-urbanist text-rishi-black mt-1 p-0">
           {yearMajor}
         </p>

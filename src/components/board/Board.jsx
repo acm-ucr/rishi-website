@@ -13,6 +13,7 @@ const Board = () => {
               image={member.image}
               yearMajor={member.yearMajor}
               pronouns={member.pronouns}
+              linkedin={member.linkedin}
             />
           </div>
         ))}
