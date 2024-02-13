@@ -35,7 +35,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="flex   items-center relative w-screen lg:-top-28 lg:-right-36 md:-top-72 md:-right-20 sm:-top-80 sm:-right-16 ">
+      <div className="flex   items-center relative w-screen lg:-top-36 lg:-right-24 md:-top-52 md:-right-12 sm:-top-80 sm:-right-16 ">
         <div className="flex   outline outline-rishi-orange outline-3 rounded-full  ">
           <Image
             src={landing}
