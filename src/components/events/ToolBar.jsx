@@ -3,8 +3,8 @@ import { GoArrowRight } from "react-icons/go";
 
 const ToolBar = ({ label, handleDate }) => {
   return (
-    <div>
-      <span className="flex flex-row h-full sm:w-1/6 w-full justify-around">
+    <div className="z-10 mb-3">
+      <span className="flex flex-row sm:h-full h-auto sm:w-1/6 w-full justify-around">
         <button className="w-auto">
           <GoArrowLeft
             className="rishi-black w-6 h-6 sm:w-full sm:h-full"
