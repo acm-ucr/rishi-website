@@ -61,7 +61,7 @@ const Mycalendar = () => {
   };
   // - - - - - - - - ------------------------------ - - -
   return (
-    <div className="w-full px-10 ">
+    <div className="w-full sm:px-10 px-2">
       <Calendar
         localizer={localizer}
         date={date}
