@@ -26,14 +26,17 @@ const Navigation = () => {
           href="/"
         >
           <Image
-            className="flex justify-between object-scale-down object-left h-[57px]"
+            className="flex justify-between w-auto object-left h-[57px]"
             src={logo}
             alt="Rishi Logo"
           />
         </Link>
       </Navbar.Brand>
 
-      <Navbar.Toggle aria-controls="responsive-navbar-nav">
+      <Navbar.Toggle
+        className="list-unstyled !text-transparent border-0"
+        aria-controls="responsive-navbar-nav"
+      >
         <FaBars className="text-rishi-green text-xl" />
       </Navbar.Toggle>
 
@@ -45,16 +48,15 @@ const Navigation = () => {
               key={index}
               href={item.link}
               onClick={() => setSelected(item.name)}
-              eventKey="2"
             >
-              <div className="flex-col items-center font-urbanist font-light text-rishi-green hover:text-rishi-orange p-0 md:text-2xl sm:text-sm">
+              <div className="flex-col items-center font-urbanist font-light text-rishi-green hover:text-rishi-orange">
                 <div>{item.name}</div>
 
                 <div className="flex justify-center">
                   <div
                     className={
                       selected === item.name
-                        ? "bg-rishi-orange p-1 -translate-y-3 rounded-full"
+                        ? "bg-rishi-orange p-1 rounded-full"
                         : "p-1"
                     }
                   ></div>

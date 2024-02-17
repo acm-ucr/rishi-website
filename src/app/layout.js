@@ -4,6 +4,7 @@ import "./globals.css";
 import { Urbanist, Istok_Web } from "next/font/google";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
