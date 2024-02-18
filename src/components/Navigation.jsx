@@ -49,7 +49,7 @@ const Navigation = () => {
               href={item.link}
               onClick={() => setSelected(item.name)}
             >
-              <div className="flex-col items-center font-urbanist font-light text-rishi-green hover:text-rishi-orange">
+              <div className="flex-col items-center font-urbanist font-light text-rishi-green hover:text-rishi-orange text-2xl">
                 <div>{item.name}</div>
 
                 <div className="flex justify-center">
