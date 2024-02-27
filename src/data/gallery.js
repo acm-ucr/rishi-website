@@ -78,7 +78,7 @@ import pad2022_11 from "@/public/trips/pad2022/pad_11.webp";
 import pad2022_13 from "@/public/trips/pad2022/pad_13.webp";
 import pad2022_14 from "@/public/trips/pad2022/pad_14.webp";
 import pad2022_15 from "@/public/trips/pad2022/pad_15.webp";
-import pad2022_16 from "@/public/trips/pad2022/pad_16.webp";
+// import pad2022_16 from "@/public/trips/pad2022/pad_16.webp";
 import pad2022_17 from "@/public/trips/pad2022/pad_17.webp";
 import pad2022_18 from "@/public/trips/pad2022/pad_18.webp";
 import pad2022_19 from "@/public/trips/pad2022/pad_19.webp";
@@ -86,9 +86,9 @@ import pad2022_20 from "@/public/trips/pad2022/pad_20.webp";
 import pad2022_21 from "@/public/trips/pad2022/pad_21.webp";
 import pad2022_22 from "@/public/trips/pad2022/pad_22.webp";
 import pad2022_23 from "@/public/trips/pad2022/pad_23.webp";
-import pad2022_24 from "@/public/trips/pad2022/pad_24.webp";
+// import pad2022_24 from "@/public/trips/pad2022/pad_24.webp";
 import pad2022_25 from "@/public/trips/pad2022/pad_25.webp";
-import pad2022_26 from "@/public/trips/pad2022/pad_26.webp";
+// import pad2022_26 from "@/public/trips/pad2022/pad_26.webp";
 import pad2022_27 from "@/public/trips/pad2022/pad_27.webp";
 import pad2022_28 from "@/public/trips/pad2022/pad_28.webp";
 
@@ -178,7 +178,7 @@ export const pad2022 = [
   pad2022_13,
   pad2022_14,
   pad2022_15,
-  pad2022_16,
+  // pad2022_16,
   pad2022_17,
   pad2022_18,
   pad2022_19,
@@ -186,9 +186,9 @@ export const pad2022 = [
   pad2022_21,
   pad2022_22,
   pad2022_23,
-  pad2022_24,
+  // pad2022_24,
   pad2022_25,
-  pad2022_26,
+  // pad2022_26,
   pad2022_27,
   pad2022_28,
 ];
