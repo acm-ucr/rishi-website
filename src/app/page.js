@@ -4,19 +4,22 @@ import Divider from "@/components/home/Divider";
 import Landing from "@/components/home/Landing";
 import Mission from "@/components/home/Mission";
 import Socials from "@/components/home/Socials";
-import Button from "@/components/Button";
 
 const Home = () => {
   return (
     <>
       <Landing />
-      <Heading />
+      <Heading text="ABOUT US" />
+      <div className="py-3" />
       <Mission />
+      <div className="py-5" />
       <Carousel />
+      <div className="py-5" />
       <Divider />
-      <Heading />
+      <div className="py-5" />
+      <Heading text="JOIN US" />
+      <div className="py-3" />
       <Socials />
-      <Button />
     </>
   );
 };

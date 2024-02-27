@@ -1,9 +1,10 @@
 /* eslint-disable new-cap */
 /* eslint-disable camelcase */
-import Navigation from "@/components/Navigation";
 import "./globals.css";
 import { Urbanist, Istok_Web } from "next/font/google";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -25,9 +26,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${urbanist.className} ${istok.variable}`}>
+      <body
+        className={`${urbanist.className} ${istok.variable} overscroll-none flex flex-col min-h-screen`}
+      >
         <Navigation />
+        <div className="p-4" />
+
         {children}
+        <div className="p-4 flex-grow" />
         <Footer />
       </body>
     </html>

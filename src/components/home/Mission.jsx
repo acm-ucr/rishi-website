@@ -1,9 +1,8 @@
 const Mission = () => {
   return (
     <div>
-      Mission
-      <div className="flex">
-        <div className="bg-rishi-orange w-1/2 flex flex-col gap-6 p-10">
+      <div className="flex flex-col md:flex-row">
+        <div className="bg-rishi-orange w-full md:w-1/2 flex flex-col gap-6 p-10">
           <div className="text-left font-bold text-rishi-white text-4xl">
             Objective
           </div>
@@ -19,7 +18,7 @@ const Mission = () => {
           </div>
         </div>
 
-        <div className="bg-rishi-green w-1/2 flex flex-col gap-6 p-10">
+        <div className="bg-rishi-green w-full md:w-1/2 flex flex-col gap-6 p-10">
           <div className="text-left font-bold text-rishi-white text-4xl">
             UCR Chapter
           </div>
