@@ -25,7 +25,7 @@ const GalleryImage = ({ trip }) => {
       <Image
         alt="gallery"
         src={trip}
-        className="transition-opacity duration-[2s] object-cover h-full"
+        className="transition-opacity duration-[2s] object-cover max-h-[300px] w-full"
       />
     </motion.div>
   );
