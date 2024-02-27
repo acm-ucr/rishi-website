@@ -30,23 +30,23 @@ import india2016_2 from "@/public/trips/india2016/2016_2.webp";
 import india2016_3 from "@/public/trips/india2016/2016_3.webp";
 import india2016_4 from "@/public/trips/india2016/2016_4.webp";
 import india2016_5 from "@/public/trips/india2016/2016_5.webp";
-import india2016_6 from "@/public/trips/india2016/2016_6.webp";
+// import india2016_6 from "@/public/trips/india2016/2016_6.webp";
 import india2016_7 from "@/public/trips/india2016/2016_7.webp";
 import india2016_8 from "@/public/trips/india2016/2016_8.webp";
-import india2016_9 from "@/public/trips/india2016/2016_9.webp";
+// import india2016_9 from "@/public/trips/india2016/2016_9.webp";
 import india2016_10 from "@/public/trips/india2016/2016_10.webp";
-import india2016_11 from "@/public/trips/india2016/2016_11.webp";
+// import india2016_11 from "@/public/trips/india2016/2016_11.webp";
 import india2016_12 from "@/public/trips/india2016/2016_12.webp";
 import india2016_13 from "@/public/trips/india2016/2016_13.webp";
-import india2016_14 from "@/public/trips/india2016/2016_14.webp";
+// import india2016_14 from "@/public/trips/india2016/2016_14.webp";
 import india2016_15 from "@/public/trips/india2016/2016_15.webp";
 import india2016_16 from "@/public/trips/india2016/2016_16.webp";
 import india2016_17 from "@/public/trips/india2016/2016_17.webp";
-import india2016_18 from "@/public/trips/india2016/2016_18.webp";
+// import india2016_18 from "@/public/trips/india2016/2016_18.webp";
 import india2016_19 from "@/public/trips/india2016/2016_19.webp";
 import india2016_20 from "@/public/trips/india2016/2016_20.webp";
 import india2016_21 from "@/public/trips/india2016/2016_21.webp";
-import india2016_22 from "@/public/trips/india2016/2016_22.webp";
+// import india2016_22 from "@/public/trips/india2016/2016_22.webp";
 
 import india2019_1 from "@/public/trips/india2019/2019_1.webp";
 import india2019_2 from "@/public/trips/india2019/2019_2.webp";
@@ -125,24 +125,24 @@ export const india2016 = [
   india2016_2,
   india2016_3,
   india2016_4,
-  india2016_5,
-  india2016_6,
+  india2016_5, // delete
+  // india2016_6,
   india2016_7,
   india2016_8,
-  india2016_9,
+  // india2016_9,
   india2016_10,
-  india2016_11,
+  // india2016_11,
   india2016_12,
   india2016_13,
-  india2016_14,
+  // india2016_14,
   india2016_15,
   india2016_16,
   india2016_17,
-  india2016_18,
+  // india2016_18,
   india2016_19,
   india2016_20,
   india2016_21,
-  india2016_22,
+  // india2016_22,
 ];
 
 export const india2019 = [
