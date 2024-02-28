@@ -20,11 +20,11 @@ const Footer = () => {
               href="https://www.instagram.com/ucrprishi/?hl=en"
               target="_blank"
             >
-              <AiFillInstagram />
+              <AiFillInstagram style={{ color: "white" }} />
             </Link>
 
             <Link href="https://www.facebook.com/ucrprishi/" target="_blank">
-              <IoLogoFacebook />
+              <IoLogoFacebook style={{ color: "white" }} />
             </Link>
 
             <div className="pb-1" />
@@ -32,7 +32,7 @@ const Footer = () => {
               href="https://www.tiktok.com/@ucrprishi?_t=8bass9dmqp8&_r=1"
               target="_blank"
             >
-              <FaTiktok className="w-10" />
+              <FaTiktok className="w-10" style={{ color: "white" }} />
             </Link>
           </div>
         </div>
