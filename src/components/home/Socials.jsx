@@ -6,18 +6,18 @@ import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 const Socials = () => {
   return (
-    <div className="flex justify-center flex-col items-center h-full w-full ">
-      <div className="flex  justify-around   w-11/12 h-2/5 ">
+    <div className=" flex justify-center flex-col items-center h-full w-full ">
+      <div className="md:flex grid grid-cols-2 gap-5 justify-around w-11/12 h-2/5 ">
         <Link
           href="https://www.instagram.com/ucrprishi/?hl=en"
           target="_blank"
-          className="border-2 border-rishi-green  rounded-2xl flex justify-center items-center w-1/5 h-full py-2  "
+          className="border-2 border-rishi-green  rounded-2xl flex justify-center items-center sm:w-1/2 lg:w-1/4 xl:w-1/5 h-full py-2  no-underline"
         >
-          <div className="drop-shadow-xl bg-rishi-white rounded-2xl   w-11/12 h-5/6 flex flex-col justify-around items-center  py-14 transform transition duration-500 ease-in-out hover:scale-105 ">
+          <div className="drop-shadow-xl bg-rishi-white rounded-2xl w-full h-full sm:w-11/12 sm:h-5/6 flex flex-col justify-around items-center  py-14 transform transition duration-500 ease-in-out hover:scale-105 ">
             <div className="flex flex-row  justify-center items-center  w-1/2 h-2/3 pb-4 ">
               <AiFillInstagram className="  text-rishi-black bg-rishi-white w-full h-full " />
             </div>
-            <div className="flex  font-bold h-full w-full   lg:text-2xl  md:text-sm sm:text-xs items-center justify-center text-rishi-black pt-2">
+            <div className="flex  font-bold h-full w-full lg:text-2xl  md:text-sm sm:text-xs items-center justify-center text-rishi-black pt-2">
               Instagram
             </div>
           </div>
@@ -26,9 +26,9 @@ const Socials = () => {
         <Link
           href="https://www.facebook.com/ucrprishi/"
           target="_blank"
-          className="border-2 border-rishi-orange rounded-2xl flex justify-center items-center w-1/5 h-full py-2 "
+          className="border-2 border-rishi-orange rounded-2xl flex justify-center items-center sm:w-1/2 lg:w-1/4 xl:w-1/5 h-full py-2 no-underline"
         >
-          <div className="drop-shadow-xl bg-rishi-white rounded-2xl  flex flex-col justify-around items-center w-11/12 h-5/6   py-14 transform transition duration-500 ease-in-out hover:scale-105">
+          <div className="drop-shadow-xl bg-rishi-white rounded-2xl  flex flex-col justify-around items-center w-full h-full sm:w-11/12 sm:h-5/6   py-14 transform transition duration-500 ease-in-out hover:scale-105">
             <div className="flex flex-row  justify-center items-center  w-1/2 h-2/3 pb-4  ">
               <FaFacebookSquare className="  fill-rishi-black w-full h-full" />
             </div>
@@ -41,9 +41,9 @@ const Socials = () => {
         <Link
           href="https://ucr.campuslabs.com/engage/organization/projectrishi"
           target="_blank"
-          className="border-2 border-rishi-green rounded-2xl flex justify-center items-center w-1/5 h-full py-2 "
+          className="border-2 border-rishi-green rounded-2xl flex justify-center items-center sm:w-1/2 lg:w-1/4 xl:w-1/5 h-full py-2 no-underline"
         >
-          <div className="drop-shadow-xl bg-rishi-white rounded-2xl  flex flex-col justify-around   items-center w-11/12 h-5/6 py-14 transform transition duration-500 ease-in-out hover:scale-105">
+          <div className="drop-shadow-xl bg-rishi-white rounded-2xl  flex flex-col justify-around   items-center w-full h-full sm:w-11/12 sm:h-5/6  py-14 transform transition duration-500 ease-in-out hover:scale-105">
             <div className="flex flex-row  justify-center items-center  w-1/2 h-2/3 pb-4 ">
               <FaLink className=" fill-rishi-black w-full h-full" />
             </div>
@@ -56,9 +56,9 @@ const Socials = () => {
         <Link
           href="https://www.tiktok.com/@ucrprishi?_t=8bass9dmqp8&_r=1"
           target="_blank"
-          className="border-2 border-rishi-orange rounded-2xl flex justify-center items-center w-1/5 h-full py-2   "
+          className="border-2 border-rishi-orange rounded-2xl flex justify-center items-center sm:w-1/2 lg:w-1/4 xl:w-1/5 h-full py-2  no-underline "
         >
-          <div className="drop-shadow-xl bg-rishi-white rounded-2xl   flex flex-col justify-around items-center  w-11/12 h-5/6 py-14 transform transition duration-500 ease-in-out hover:scale-105 ">
+          <div className="drop-shadow-xl bg-rishi-white rounded-2xl   flex flex-col justify-around items-center w-full h-full sm:w-11/12 sm:h-5/6 py-14 transform transition duration-500 ease-in-out hover:scale-105 ">
             <div className="flex flex-row  justify-center  w-1/2 h-2/3   pb-4">
               <FaTiktok className=" fill-rishi-black  w-full h-full" />
             </div>

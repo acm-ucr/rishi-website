@@ -11,6 +11,7 @@ const Page = () => {
   };
   return (
     <>
+      <div className="pt-20"></div>
       <Heading text="GALLERY" />
       <Options tripClick={getYear} />
     </>

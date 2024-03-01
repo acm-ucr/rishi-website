@@ -1,6 +1,6 @@
 import Heading from "@/components/Heading";
+import GalleryImage from "@/components/gallery/GalleryImage";
 import { india2014, india2016, india2019, pad2022 } from "@/data/gallery";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -27,11 +27,7 @@ const Page = ({ params }) => {
           {trips[params.trip].map((trip, index) => {
             return (
               <div key={index}>
-                <Image
-                  alt="gallery"
-                  src={trip}
-                  className=" object-cover h-full "
-                />
+                <GalleryImage trip={trip} />
               </div>
             );
           })}
