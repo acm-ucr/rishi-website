@@ -1,18 +1,18 @@
 export const items = [
   {
     name: "ABOUT",
-    link: "about",
+    link: "/about",
   },
   {
     name: "EVENTS",
-    link: "events",
+    link: "/events",
   },
   {
     name: "GALLERY",
-    link: "gallery",
+    link: "/gallery",
   },
   {
     name: "BOARD",
-    link: "board",
+    link: "/board",
   },
 ];
