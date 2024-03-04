@@ -1,11 +1,30 @@
+"use client";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const animations = {
+  start: {
+    opacity: 0,
+    y: 30,
+  },
+  end: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 const Socials = () => {
   return (
+    <motion.div
+    variants={animations}
+      initial="start"
+      whileInView="end"
+      transition={{ delay: 0.2 }}>
     <div className=" flex justify-center flex-col items-center h-full w-full ">
       <div className="md:flex grid grid-cols-2 gap-5 justify-around w-11/12 h-2/5 ">
         <Link
@@ -79,6 +98,7 @@ const Socials = () => {
         </div>
       </Link>
     </div>
+    </motion.div>
   );
 };
 
