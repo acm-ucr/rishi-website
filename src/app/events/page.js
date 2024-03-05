@@ -1,7 +1,11 @@
-import Mycalendar from "@/components/events/Calendar";
+import CalendarApi from "@/components/events/CalendarApi";
 
 const Page = () => {
-  return <Mycalendar />;
+  return (
+    <>
+      <CalendarApi />
+    </>
+  );
 };
 
 export default Page;

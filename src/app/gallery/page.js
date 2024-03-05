@@ -6,7 +6,6 @@ import { useRouter } from "next/navigation";
 const Page = () => {
   const router = useRouter();
   const getYear = (tripName) => {
-    console.log(tripName);
     router.push(`gallery/${tripName}/`);
   };
   return (
