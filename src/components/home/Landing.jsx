@@ -13,7 +13,7 @@ const Landing = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="font-urbanist font-extrabold text-rishi-black text-4xl md:text-5xl text-center gap-2">
+          <div className="font-urbanist font-extrabold text-rishi-black text-4xl md:text-5xl text-center">
             Project RISHI at UCR
           </div>
         </div>
