@@ -1,7 +1,7 @@
+import NotFound from "@/app/not-found";
 import Heading from "@/components/Heading";
 import GalleryImage from "@/components/gallery/GalleryImage";
 import { india2014, india2016, india2019, pad2022 } from "@/data/gallery";
-import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
   const allTrips = ["2014", "2016", "2019", "2022"];
@@ -35,7 +35,7 @@ const Page = ({ params }) => {
       </div>
     );
   } else {
-    return notFound();
+    return <NotFound />;
   }
 };
 

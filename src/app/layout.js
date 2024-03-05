@@ -29,9 +29,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${urbanist.className} ${istok.variable} overscroll-none flex flex-col min-h-screen`}
       >
-        <Navigation />
-        <div className="p-4" />
-
+        <div className="py-5">
+          <Navigation />
+        </div>
         {children}
         <div className="p-4 flex-grow" />
         <Footer />
