@@ -26,14 +26,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link
-          rel="icon"
-          href="/prishi-logo.webp"
-          type="image/x-icon"
-          sizes="16x16"
-        ></link>
-      </head>
       <body
         className={`${urbanist.className} ${istok.variable} overscroll-none flex flex-col min-h-screen`}
       >
