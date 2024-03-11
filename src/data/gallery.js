@@ -16,10 +16,10 @@ import india2014_14 from "@/public/trips/india2014/2014_14.webp";
 import india2014_15 from "@/public/trips/india2014/2014_15.webp";
 import india2014_16 from "@/public/trips/india2014/2014_16.webp";
 import india2014_17 from "@/public/trips/india2014/2014_17.webp";
-import india2014_18 from "@/public/trips/india2014/2014_18.webp";
+// import india2014_18 from "@/public/trips/india2014/2014_18.webp";
 import india2014_19 from "@/public/trips/india2014/2014_19.webp";
 import india2014_20 from "@/public/trips/india2014/2014_20.webp";
-import india2014_21 from "@/public/trips/india2014/2014_21.webp";
+// import india2014_21 from "@/public/trips/india2014/2014_21.webp";
 import india2014_22 from "@/public/trips/india2014/2014_22.webp";
 import india2014_23 from "@/public/trips/india2014/2014_23.webp";
 import india2014_24 from "@/public/trips/india2014/2014_24.webp";
@@ -110,10 +110,10 @@ export const india2014 = [
   india2014_15,
   india2014_16,
   india2014_17,
-  india2014_18,
+  // india2014_18,
   india2014_19,
   india2014_20,
-  india2014_21,
+  // india2014_21,
   india2014_22,
   india2014_23,
   india2014_24,
