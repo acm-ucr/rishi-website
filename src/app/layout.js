@@ -3,6 +3,8 @@
 import "./globals.css";
 import { Urbanist, Istok_Web } from "next/font/google";
 import Footer from "@/components/Footer";
+import Navigation from "@/components/Navigation";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
@@ -27,8 +29,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${urbanist.className} ${istok.variable} overscroll-none flex flex-col min-h-screen`}
       >
-        <div className="p-4" />
-
+        <div className="py-5">
+          <Navigation />
+        </div>
         {children}
         <div className="p-4 flex-grow" />
         <Footer />

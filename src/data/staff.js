@@ -70,12 +70,20 @@ export const boardMembers = [
   },
   {
     name: "Siddharth Shanbhag",
-    role: "Fundraisng Officer",
+    role: "Fundraising Officer",
     image: Sid,
     yearMajor: "3rd year - Biology",
     pronouns: "he/him",
     linkedin:
       "https://www.linkedin.com/in/siddharth-shanbhag-9b88b2170?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BSKQipOf9QDiW4zxoViQnRg%3D%3D",
+  },
+  {
+    name: "Almas Sehr",
+    role: "Fundraising Officer",
+    // image: Almas,
+    yearMajor: "2nd year - Psychology",
+    pronouns: "she/hers",
+    linkedin: "linkedin.com/in/almas-sehr-b99a55260",
   },
 ];
 
