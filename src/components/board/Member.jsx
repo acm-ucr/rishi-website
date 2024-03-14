@@ -18,7 +18,7 @@ const Member = ({ name, role, image, yearMajor, pronouns, linkedin }) => {
         <div className="flex gap-2 justify-center">
           {linkedin && (
             <Link href={linkedin} target="_blank">
-              <FaLinkedinIn className="h-6 w-6 text-rishi-orange" />
+              <FaLinkedinIn className="h-6 w-6 text-rishi-orange duration-300 ease-in-out hover:scale-110" />
             </Link>
           )}
         </div>
