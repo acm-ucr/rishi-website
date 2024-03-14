@@ -20,7 +20,7 @@ const Footer = () => {
               href="https://www.instagram.com/ucrprishi/?hl=en"
               target="_blank"
             >
-              <AiFillInstagram className="text-white duration-500 ease-in-out hover:scale-110" />
+              <AiFillInstagram className="text-white duration-300 ease-in-out hover:scale-110" />
             </Link>
 
             <Link href="https://www.facebook.com/ucrprishi/" target="_blank">
