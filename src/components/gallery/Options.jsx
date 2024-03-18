@@ -1,37 +1,31 @@
-import { motion } from "framer-motion";
-
 const Options = ({ tripClick }) => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center py-10 gap-y-2 w-1/2">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
+        <button
           onClick={() => tripClick("2014")}
-          className="bg-rishi-orange text-rishi-white text-3xl font-medium w-full py-8 no-underline"
+          className="bg-rishi-orange text-rishi-white text-3xl font-medium w-full py-8 duration-300 ease-in-out hover:scale-105 no-underline"
         >
           INDIA TRIP 2014
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
+        </button>
+        <button
           onClick={() => tripClick("2016")}
-          className="bg-rishi-green text-rishi-white text-3xl font-medium w-full py-8 no-underline"
+          className="bg-rishi-green text-rishi-white text-3xl font-medium w-full py-8 no-underline duration-300 ease-in-out hover:scale-105"
         >
           INDIA TRIP 2016
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
+        </button>
+        <button
           onClick={() => tripClick("2019")}
-          className="bg-rishi-orange text-rishi-white text-3xl font-medium w-full py-8 no-underline"
+          className="bg-rishi-orange text-rishi-white text-3xl font-medium w-full py-8 no-underline duration-300 ease-in-out hover:scale-105"
         >
           INDIA TRIP 2019
-        </motion.button>
-        <motion.button
-          whileHover={{ scale: 1.1 }}
+        </button>
+        <button
           onClick={() => tripClick("2022")}
-          className="bg-rishi-green text-rishi-white text-3xl font-medium w-full py-8 no-underline"
+          className="bg-rishi-green text-rishi-white text-3xl font-medium w-full py-8 no-underline duration-300 ease-in-out hover:scale-105"
         >
           PAD SHIPMENT 2022
-        </motion.button>
+        </button>
       </div>
     </div>
   );
