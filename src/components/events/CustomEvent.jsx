@@ -1,6 +1,6 @@
 const CustomEvent = ({ event }) => {
   return (
-    <div className={`${event.color} text-sm flex justify-start`}>
+    <div className={`${event.color} text-sm border-none flex justify-start`}>
       &nbsp;&nbsp;
       <p className="whitespace-nowrap m-0">
         {!event.allDay &&
