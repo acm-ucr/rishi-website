@@ -6,8 +6,8 @@ import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
 const Socials = () => {
   return (
-    <div className=" flex justify-center flex-col items-center h-full w-full ">
-      <div className="md:flex grid grid-cols-2 gap-5 justify-around w-11/12 h-2/5 ">
+    <div className=" flex justify-center mb-[120px] flex-col items-center h-full w-full ">
+      <div className="md:flex grid grid-cols-1 gap-5 justify-around w-11/12 h-2/5 ">
         <Link
           href="https://www.instagram.com/ucrprishi/?hl=en"
           target="_blank"
