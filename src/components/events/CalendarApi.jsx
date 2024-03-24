@@ -8,7 +8,6 @@ const CalendarApi = () => {
   const [events, setEvents] = useState();
 
   useEffect(() => {
-    console.log(process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_EMAIL);
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
