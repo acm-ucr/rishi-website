@@ -9,37 +9,12 @@ import Modal from "./modal";
 
 const localizer = momentLocalizer(moment);
 
-const Mycalendar = () => {
+const Mycalendar = ({ events }) => {
   const formats = {
     monthHeaderFormat: (date, culture, localizer) =>
       localizer.format(date, "MMM YYYY", culture),
   };
-  const Myevents = [
-    {
-      title: "12pm Meeting",
-      start: moment().toDate(),
-      end: moment().add(0, "day").toDate(),
-      description: "hi",
-      location: "src",
-      color: "bg-rishi-orange",
-    },
-    {
-      title: "test",
-      start: moment("2024-02-13T00:00").toDate(),
-      end: moment("2024-02-13T00:00").toDate(),
-      description: "hi",
-      location: "src",
-      color: "bg-rishi-orange",
-    },
-    {
-      title: "rose hack",
-      start: moment("2024-01-22T02:00").toDate(),
-      end: moment("2024-01-22T05:00").toDate(),
-      description: "hi",
-      location: "src",
-      color: "bg-rishi-orange",
-    },
-  ];
+
   // navigation - - - - - - - - - - - - - - - - - - - - - - - -
   const [date, setDate] = useState(new Date());
   const handleDate = (action) => {
@@ -66,7 +41,7 @@ const Mycalendar = () => {
         localizer={localizer}
         date={date}
         onSelectEvent={handleSelect}
-        events={Myevents}
+        events={events}
         views={["month"]}
         defaultView="month"
         style={{ height: "90vh" }}
