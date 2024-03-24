@@ -79,7 +79,7 @@ import pad2022_22 from "@/public/trips/pad2022/pad_22.webp";
 import pad2022_23 from "@/public/trips/pad2022/pad_23.webp";
 import pad2022_25 from "@/public/trips/pad2022/pad_25.webp";
 import pad2022_27 from "@/public/trips/pad2022/pad_27.webp";
-import pad2022_28 from "@/public/trips/pad2022/pad_28.webp";
+import pad2022_28 from "@/public/trips/pad2022/webp.webp";
 
 export const india2014 = [
   india2014_1,
