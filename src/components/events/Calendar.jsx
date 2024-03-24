@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
+import CustomEvent from "./CustomEvent";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "./rbc.css";
 import ToolBar from "./ToolBar";
@@ -48,6 +49,7 @@ const Mycalendar = ({ events }) => {
         formats={formats}
         onNavigate={handleDate}
         components={{
+          event: CustomEvent,
           toolbar: (props) => <ToolBar {...props} handleDate={handleDate} />,
         }}
       />
