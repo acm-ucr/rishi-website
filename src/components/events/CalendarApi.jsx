@@ -6,7 +6,6 @@ import axios from "axios";
 const CalendarApi = () => {
   // make all Google Calendar API calls here and pass events into Mycalendar as props
   const [events, setEvents] = useState();
-
   useEffect(() => {
     axios
       .get(
