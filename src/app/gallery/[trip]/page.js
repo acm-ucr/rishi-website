@@ -23,7 +23,7 @@ const Page = ({ params }) => {
         <div className=" pt-12">
           <Heading text={`INDIA TRIP ${params.trip}`} />
         </div>
-        <div className="grid grid-cols-3 grid-rows-6 gap-10 justify-center  p-28 ">
+        <div className="grid grid-cols-2  sm:grid-cols-3 sm:grid-rows-6 gap-10 justify-center p-12  sm:px-28 ">
           {trips[params.trip].map((trip, index) => {
             return (
               <div key={index}>
