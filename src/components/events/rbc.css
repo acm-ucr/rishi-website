@@ -46,3 +46,11 @@
 .rbc-day-bg.rbc-today {
   background-color: #efefef;
 }
+
+.rbc-calendar,
+.rbc-calendar *,
+.rbc-calendar *:before,
+.rbc-calendar *:after {
+  border: none !important;
+  box-shadow: none !important;
+}
