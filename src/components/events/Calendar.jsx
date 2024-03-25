@@ -52,6 +52,11 @@ const Mycalendar = ({ events }) => {
           event: CustomEvent,
           toolbar: (props) => <ToolBar {...props} handleDate={handleDate} />,
         }}
+        eventPropGetter={() => {
+          return {
+            className: `p-0 !active:ring-0 !focus:outline-0 !bg-transparent`,
+          };
+        }}
       />
       {selectedEvent && (
         <Modal

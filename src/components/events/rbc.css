@@ -22,21 +22,6 @@
   border-bottom-right-radius: 20px;
 }
 
-.rbc-event {
-  background-color: #f18650;
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.rbc-event-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 2px;
-}
-
 .rbc-button-link {
   font-size: 35px;
   color: #5a5a5a;
