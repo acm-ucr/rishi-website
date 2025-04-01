@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import Nav from "react-bootstrap/Nav";
@@ -9,7 +9,7 @@ import logo from "@/public/prishi-text-logo.webp";
 import { FaBars } from "react-icons/fa";
 
 const Navigation = () => {
-  const [selected, setSelected] = useState("");
+  const pathname = usePathname();
   return (
     <Navbar
       collapseOnSelect
@@ -19,12 +19,7 @@ const Navigation = () => {
       aria-controls="responsive-navbar-nav"
     >
       <Navbar.Brand>
-        <Link
-          onClick={() => setSelected("")}
-          eventkey="1"
-          className="p-0 flex items-center gap-2"
-          href="/"
-        >
+        <Link eventkey="1" className="p-0 flex items-center gap-2" href="/">
           <Image
             className="flex justify-between w-auto object-left h-[57px]"
             src={logo}
@@ -42,20 +37,15 @@ const Navigation = () => {
 
       <Navbar.Collapse className="items-center md:justify-end justify-center">
         <Nav className="w-12/12 flex items-center gap-x-10">
-          {items.map((item, index) => (
-            <Nav.Link
-              as={Link}
-              key={index}
-              href={item.link}
-              onClick={() => setSelected(item.name)}
-            >
+          {items.map(({ name, link }, index) => (
+            <Nav.Link as={Link} key={index} href={link}>
               <div className="flex-col items-center font-urbanist font-light text-rishi-green hover:text-rishi-orange text-2xl">
-                <div>{item.name}</div>
+                <div>{name}</div>
 
                 <div className="flex justify-center">
                   <div
                     className={
-                      selected === item.name
+                      pathname == link
                         ? "bg-rishi-orange p-1 rounded-full"
                         : "p-1"
                     }
